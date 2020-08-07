@@ -7,7 +7,8 @@
   },
   "nodes": 2,
   "image": {
-    "repo": "parity/polkadot",
-    "tag": "v0.8.12"
-  }
+    "repo": "hydra-dx/hydra-dx",
+    "tag": "test"
+  },
+  "binaryName": "hydra-dx"
 }
