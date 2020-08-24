@@ -5,10 +5,18 @@
     "enabled": true,
     "schedule": "50 * * * *"
   },
-  "nodes": 2,
+  "nodes": 1,
   "image": {
-    "repo": "hydra-dx/hydra-dx",
-    "tag": "test"
+    "repo": "registry.digitalocean.com/hydra-dx/hydra-dx",
+    "tag": "0.0.2-deployer-test"
   },
-  "binaryName": "hydra-dx"
+  "binaryName": "hydra-dx",
+  "imagePullSecret": {
+      "secretName": "docker-registry-secret",
+      "imageCredentials": {
+        "registry": "registry-name",
+        "username": "username",
+        "password": "password"
+      }
+  }
 }
